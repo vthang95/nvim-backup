@@ -56,7 +56,7 @@ local config = {
   softtabstop = 2,
   shiftwidth = 2,
   expandtab = true,
-  colorcolumn = '120'
+  colorcolumn = '90'
 }
 
 for i, v in pairs(config) do

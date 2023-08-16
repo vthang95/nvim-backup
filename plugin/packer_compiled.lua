@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/vthang/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/home/vthang/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/home/vthang/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",

@@ -1,7 +1,7 @@
 -- vim.g.colors_name = 'tender'
 -- vim.g.ayucolor = 'dark'
--- vim.cmd.colorscheme 'melange'
-require('kanagawa').setup({
+vim.cmd.colorscheme 'melange'
+--[[ require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
     undercurl = true,            -- enable undercurls
     commentStyle = { italic = true },
@@ -36,7 +36,7 @@ require('kanagawa').setup({
         light = "lotus"
     },
 })
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'kanagawa' ]]
 
 local config = {
   encoding = 'utf-8',

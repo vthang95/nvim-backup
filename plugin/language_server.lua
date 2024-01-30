@@ -9,6 +9,8 @@ nvim_lsp.tsserver.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  root_dir = nvim_lsp.util.root_pattern("package.json"),
+  single_file_support = false,
   cmd = { "typescript-language-server", "--stdio" }
 })
 
@@ -22,8 +24,4 @@ nvim_lsp.rust_analyzer.setup({
   on_attach = on_attach,
 })
 
-nvim_lsp.elixirls.setup({
-  cmd = { "elixir-ls" },
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
+require("rust-tools").setup({})

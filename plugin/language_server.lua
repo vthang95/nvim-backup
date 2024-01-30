@@ -21,3 +21,9 @@ nvim_lsp.rust_analyzer.setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
+
+nvim_lsp.elixirls.setup({
+  cmd = { "elixir-ls" },
+  capabilities = capabilities,
+  on_attach = on_attach,
+})

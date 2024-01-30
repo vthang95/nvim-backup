@@ -28,6 +28,7 @@ require('kanagawa').setup({
           Repeat = { fg = colors.palette.waveRed, bold = false },
           Label = { fg = colors.palette.waveRed, bold = false },
           HlIgnore = { fg = colors.palette.white },
+          String = { italic = true },
         }
     end,
     theme = "wave",              -- Load "wave" theme when 'background' option is not set
@@ -37,6 +38,7 @@ require('kanagawa').setup({
     },
 })
 vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'rose-pine'
 
 local config = {
   encoding = 'utf-8',
@@ -56,7 +58,9 @@ local config = {
   softtabstop = 2,
   shiftwidth = 2,
   expandtab = true,
-  colorcolumn = '120'
+  colorcolumn = '120',
+  --[[ viewoptions = 'folds,cursor',
+  sessionoptions = 'folds', ]]
 }
 
 for i, v in pairs(config) do

@@ -22,8 +22,10 @@ vim.cmd.colorscheme 'melange'
         return {
           -- h group-name for keywords
           Conditional = { fg = colors.palette.waveRed, bold = false },
+          Identifier = { fg = colors.palette.white, bold = false },
+          Typedef = {  fg = colors.palette.white, bold = false  },
           Function = { fg = colors.palette.roninYellow, bold = false },
-          Type = { fg = colors.palette.lightBlue, bold = false },
+          Type = { fg = colors.palette.fujiGray, bold = false },
           Keyword = { fg = colors.palette.waveRed, bold = false },
           Repeat = { fg = colors.palette.waveRed, bold = false },
           Label = { fg = colors.palette.waveRed, bold = false },
@@ -51,7 +53,7 @@ local config = {
   termguicolors = true,
   list = true,
   number = true,
-  listchars = { tab = '▸ ',trail = '·' },
+  listchars = { tab = '▹ ',trail = '·' },
   tabstop = 2,
   softtabstop = 2,
   shiftwidth = 2,
@@ -81,6 +83,8 @@ vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
 
 -- Global clipboard
 vim.opt.clipboard = 'unnamedplus'
+vim.api.nvim_set_option("clipboard","unnamedplus")
+vim.opt.clipboard:append('unnamedplus')
 
 vim.o.updatetime = 50
 

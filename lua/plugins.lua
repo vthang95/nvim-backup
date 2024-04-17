@@ -64,11 +64,18 @@ packer.startup(function(use)
     }
   }
 
+  use {
+      "SmiteshP/nvim-navic",
+      requires = "neovim/nvim-lspconfig"
+  }
+
   use { "mg979/vim-visual-multi" } -- Multi cursor
   use { 'norcalli/nvim-colorizer.lua' } -- color highlighter
   use { 'tpope/vim-fugitive' } -- Git plugins
   use { 'airblade/vim-gitgutter' }
   use { 'MunifTanjim/prettier.nvim' }
+
+  use { 'rmagatti/goto-preview' }
   -- npm install -g @fsouza/prettierd
   -- npm install -g prettier
 end)

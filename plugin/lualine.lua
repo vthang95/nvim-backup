@@ -36,6 +36,13 @@ require('lualine').setup({
         end
      }
     },
+    lualine_c = {
+        {
+            "navic",
+            color_correction = "static",
+            navic_opts = { highlight = true },
+        },
+    }
     --[[ lualine_b = {
       {
         'filename',

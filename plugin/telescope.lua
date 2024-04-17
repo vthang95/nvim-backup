@@ -1,10 +1,22 @@
 require('telescope').setup({
+  layout_config = {
+    vertical = {
+      prompt_position = "top",
+      mirror = true,
+    },
+  },
   defaults = {
+    layout_strategy = "vertical",
+    layout_config = {
+      mirror = true,
+      preview_cutoff = 1
+    },
     file_ignore_patterns = {
-      "yarn.lock"
+      "yarn.lock",
+      "node_modules"
     },
     live_grep_args = {
-      file_ignore_patterns = { "yarn.lock" }
+      file_ignore_patterns = { "yarn.lock", "node%_modules/.*" }
     }
   },
   extentions = {
@@ -16,4 +28,4 @@ require('telescope').setup({
 })
 
 -- Support fuzzy search
-require('telescope').load_extension('fzf')
+-- require('telescope').load_extension('fzf')

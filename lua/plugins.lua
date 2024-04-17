@@ -17,6 +17,7 @@ packer.startup(function(use)
   use "rebelot/kanagawa.nvim"
   use 'chriskempson/base16-vim'
   use 'morhetz/gruvbox'
+  use { 'rose-pine/neovim', as = 'rose-pine' }
 
   -- LSP Base
   -- Configs for Nvim LSP Client
@@ -76,6 +77,7 @@ packer.startup(function(use)
   use { 'MunifTanjim/prettier.nvim' }
 
   use { 'rmagatti/goto-preview' }
+  use { 'akinsho/flutter-tools.nvim' }
   -- npm install -g @fsouza/prettierd
   -- npm install -g prettier
 end)

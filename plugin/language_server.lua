@@ -43,6 +43,7 @@ nvim_lsp.tailwindcss.setup({
   on_attach = function(client, bufnr)
   end
 })
+
 nvim_lsp.emmet_ls.setup({
   capabilities = capabilities,
   filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },

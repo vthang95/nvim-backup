@@ -30,6 +30,7 @@ vim.cmd.colorscheme 'melange'
           Repeat = { fg = colors.palette.waveRed, bold = false },
           Label = { fg = colors.palette.waveRed, bold = false },
           HlIgnore = { fg = colors.palette.white },
+          String = { italic = true },
         }
     end,
     theme = "wave",              -- Load "wave" theme when 'background' option is not set
@@ -38,6 +39,7 @@ vim.cmd.colorscheme 'melange'
         light = "lotus"
     },
 })
+
 vim.cmd.colorscheme 'kanagawa' ]]
 
 local config = {
@@ -58,7 +60,9 @@ local config = {
   softtabstop = 2,
   shiftwidth = 2,
   expandtab = true,
-  colorcolumn = '90'
+  colorcolumn = '120',
+  --[[ viewoptions = 'folds,cursor',
+  sessionoptions = 'folds', ]]
 }
 
 for i, v in pairs(config) do

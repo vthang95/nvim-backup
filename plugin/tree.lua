@@ -15,21 +15,21 @@ require("nvim-tree").setup {
     show_on_dirs = true,
     debounce_delay = 50,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
+      hint = "2",
+      info = "1",
+      warning = "😱",
+      error = "✗",
     }
   },
   renderer = {
     root_folder_modifier = ":t",
     icons = {
       glyphs = {
-        default = "",
-        symlink = "",
+        default = "1",
+        symlink = "2",
         folder = {
-          arrow_open = "",
-          arrow_closed = "",
+          arrow_open = "",
+          arrow_closed = "",
           default = "",
           open = "",
           empty = "",
@@ -38,12 +38,12 @@ require("nvim-tree").setup {
           symlink_open = "",
         },
         git = {
-          unstaged = "🎮",
-          staged = "",
+          unstaged = "✓",
+          staged = "🍀",
           unmerged = "",
           renamed = "➜",
-          untracked = "",
-          deleted = "",
+          untracked = "🎉",
+          deleted = "🗑️",
           ignored = "◌",
         },
       },

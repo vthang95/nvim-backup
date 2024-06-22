@@ -12,6 +12,7 @@ packer.startup(function(use)
   -- Plugins go here
   use 'wbthomason/packer.nvim'
   use "ayu-theme/ayu-vim"
+  use "rose-pine/neovim"
   use "savq/melange-nvim"
   use 'jacoborus/tender.vim'
   use "rebelot/kanagawa.nvim"
@@ -64,6 +65,8 @@ packer.startup(function(use)
       'nvim-lua/plenary.nvim',
     }
   }
+
+  use { "stevearc/aerial.nvim" }
 
   use {
       "SmiteshP/nvim-navic",

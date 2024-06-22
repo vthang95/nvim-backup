@@ -10,10 +10,10 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   },
   -- Need to run: TSInstall tsx, html
-  autotag = {
+  --[[ autotag = {
     enable = true,
     filetypes = { 'html', 'xml', 'tsx', 'jsx', 'typescriptreact', 'ex', 'exs' }
-  },
+  }, ]]
   indent = {
     enable = true,
   },

@@ -40,13 +40,21 @@ nvim_lsp.zls.setup({
 
 nvim_lsp.tailwindcss.setup({
   capabilities = capabilities,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   on_attach = function(client, bufnr)
   end
 })
 
+nvim_lsp.clangd.setup({
+  capabilities = capabilities,
+  on_attach = function(client, bufnr)
+  end
+})
+
+
 nvim_lsp.emmet_ls.setup({
   capabilities = capabilities,
-  filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
+  filetypes = { "html" },
   on_attach = function(client, bufnr)
   end
 })

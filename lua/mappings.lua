@@ -87,11 +87,11 @@ keymap.set('', '<leader>\\', ':NvimTreeToggle<CR>')
 -- Telescope
 local builtin = require('telescope.builtin')
 
+keymap.set('', '<leader>lf', '<cmd>AerialToggle!<CR>', {})
 keymap.set('', '<leader>ff', builtin.find_files, {})
 keymap.set('', '<leader>gf', builtin.git_files, {})
 keymap.set('', '<leader>rg', ':Telescope grep_string search="" only_sort_text=true<CR>', {})
 keymap.set('', '<leader>hh', ':Telescope oldfiles<CR>', {})
-
 -- Show all diagnostics on current line in floating window
 keymap.set('n', '<leader>e', ':lua vim.diagnostic.open_float()<CR>', opts)
 keymap.set('n', '<leader>r', ':lua vim.lsp.buf.code_action()<CR>', opts)
@@ -103,3 +103,4 @@ keymap.set('n', '<leader>n', ':lua vim.diagnostic.goto_next()<CR>', opts)
 keymap.set('n', '<leader>p', ':lua vim.diagnostic.goto_prev()<CR>', opts)
 -- Hover
 keymap.set('', '<leader>/', vim.lsp.buf.hover, {})
+keymap.set('', '<leader>.', ":lua require('goto-preview').goto_preview_definition()<CR>", {})
